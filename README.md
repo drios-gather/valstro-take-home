@@ -6,7 +6,7 @@ npm install
 ```
 
 ### Run
-From the repo root (e.g. `.../valstro-assessment/`):
+From the repo root (e.g. `.../valstro-take-home/`):
 
 **Using tsx or ts-node**
 ```
