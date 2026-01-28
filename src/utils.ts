@@ -1,4 +1,4 @@
-import { QueryError, QueryResult } from "./types/payload";
+import { QueryError, QueryResult } from "./types";
 
 const formatFilms = (films: string[]): string => `[${films.join(', ')}]`
 

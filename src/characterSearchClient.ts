@@ -1,6 +1,6 @@
 import { io, Socket } from "socket.io-client";
 import { formatError, formatResult, isError, isFinalResult } from "./utils";
-import { QueryError, QueryResult } from "./types/payload";
+import { QueryError, QueryResult } from "./types";
 
 const BACKEND_DOMAIN = "localhost"
 const PORT = 3000
