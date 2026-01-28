@@ -1,6 +1,5 @@
 import { io, Socket } from "socket.io-client";
-import { SearchRequestBody } from "./types/searchRequest";
-import { formatError, formatResult, isError, isFinalResult, standardizeQuery } from "./utils";
+import { formatError, formatResult, isError, isFinalResult } from "./utils";
 import { QueryError, QueryResult } from "./types/payload";
 
 const BACKEND_DOMAIN = "localhost"
