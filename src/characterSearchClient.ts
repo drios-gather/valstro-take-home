@@ -56,7 +56,7 @@ export class CharacterSearchClient {
             }
 
             this.socket.on("search", listener)
-            // No need to normalize query, since normalization is handled server-side
+            // No need to normalize the query body, since normalization is handled server-side
             this.socket.emit("search", { query })
         })
     }
