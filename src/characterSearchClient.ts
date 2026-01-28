@@ -39,8 +39,6 @@ export class CharacterSearchClient {
     }
 
     async search(query: string) {
-        const queryObj: SearchRequestBody = { query: standardizeQuery(query) }
-
         return new Promise<void>((resolve, reject) => {
             const cleanup = () => this.socket.off("search", listener)
             const listener = (payload: QueryResult | QueryError) => {
@@ -59,7 +57,8 @@ export class CharacterSearchClient {
             }
 
             this.socket.on("search", listener)
-            this.socket.emit("search", queryObj)
+            // No need to normalize query, since normalization is handled server-side
+            this.socket.emit("search", { query })
         })
     }
 }

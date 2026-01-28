@@ -1,9 +1,5 @@
 import { QueryError, QueryResult } from "./types/payload";
 
-export const standardizeQuery = (query: string): string => {
-    return query.toLowerCase().trim()
-}
-
 const formatFilms = (films: string[]): string => `[${films.join(', ')}]`
 
 export const formatResult = (result: QueryResult): string => {
