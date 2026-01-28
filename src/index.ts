@@ -5,7 +5,6 @@ import { CharacterSearchClient } from "./characterSearchClient";
 const characterSearchClient = new CharacterSearchClient(() => initUI())
 
 async function initUI() {
-    // Handling user input
     const rl = readline.createInterface({
         input: process.stdin,
         output: process.stdout,
